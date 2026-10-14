@@ -315,44 +315,9 @@ V2Ray是一种先进的翻墙协议，具有更强的灵活性与隐蔽性。相
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekobox 是否支持多配置文件切换？</h5></div>
-    <div class="panel-body">
-        支持。Nekobox 允许用户创建多个配置文件并快速切换，适合在不同网络环境下使用不同规则。例如家用网络与移动数据可使用独立的配置方案。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Netch 使用 TAP 驱动时 Windows 弹出网络变更提示，该如何处理？</h5></div>
     <div class="panel-body">
         这是正常现象，TAP 虚拟网卡会改变系统网络状态。建议在首次启用时允许驱动安装并授予网络权限，若频繁弹窗可在网络设置中调整网络识别类型或将 TAP 设为非计量连接。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Surfboard 可以结合规则实现广告屏蔽吗？</h5></div>
-    <div class="panel-body">
-        可以。Surfboard 支持通过规则文件匹配广告域名或 URL，将其阻断或重定向。结合策略组定期更新规则，可以实现自动广告屏蔽，提升网页浏览体验并节省带宽。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Surfboard 如何结合规则屏蔽广告？</h5></div>
-    <div class="panel-body">
-        Surfboard 可通过规则文件匹配广告域名或 URL，并将其重定向或阻断。结合策略组自动更新规则，可实现广告屏蔽，提高浏览体验和节省带宽。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekobox 可以与其他代理客户端共存吗？</h5></div>
-    <div class="panel-body">
-        可以。Nekobox 与 Shadowsocks、Clash 等客户端互不干扰，可以同时运行。用户可通过策略组或分流规则选择使用节点，实现灵活的网络管理。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekobox 如何设置分流规则？</h5></div>
-    <div class="panel-body">
-        Nekobox 提供图形化规则编辑界面，可基于 IP、域名、地区等条件创建分流规则。例如可设置国内直连、国外代理、特定网站走特定节点，操作直观。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何将 Clash 节点导入到 Sing-box？</h5></div>
-    <div class="panel-body">
-        Sing-box 支持从 Clash 配置文件中导入节点。用户只需将 YAML 文件放入配置目录或通过命令导入即可。系统会自动解析规则组和节点信息，简化迁移过程。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 节点延迟检测如何帮助分流？</h5></div>
-    <div class="panel-body">
-        Clash 会定期测试节点延迟，并结合策略组自动选择最优节点处理流量。避免访问高延迟或失效节点，提高网页浏览、视频播放和游戏速度及稳定性，优化整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 还能用吗？</h5></div>
@@ -362,7 +327,42 @@ V2Ray是一种先进的翻墙协议，具有更强的灵活性与隐蔽性。相
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Sing-box 的 route 功能如何工作？</h5></div>
     <div class="panel-body">
-        Sing-box 提供强大的路由系统，允许用户基于 IP、域名、GEO 数据库、进程名等条件精细分流。配置完成后，程序自动匹配规则，将不同流量转发到对应的出口。    </div>
+        Sing-box 提供强大的路由系统，允许用户基于 IP、域名、GEO 数据库、进程名等条件精细分流。配置完成后，程序自动匹配规则，将不同流量转发到对应的出口。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Surfboard 可以结合规则实现广告屏蔽吗？</h5></div>
+    <div class="panel-body">
+        可以。Surfboard 支持通过规则文件匹配广告域名或 URL，将其阻断或重定向。结合策略组定期更新规则，可以实现自动广告屏蔽，提升网页浏览体验并节省带宽。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Nekobox 是否支持多配置文件切换？</h5></div>
+    <div class="panel-body">
+        支持。Nekobox 允许用户创建多个配置文件并快速切换，适合在不同网络环境下使用不同规则。例如家用网络与移动数据可使用独立的配置方案。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Nekobox 如何设置分流规则？</h5></div>
+    <div class="panel-body">
+        Nekobox 提供图形化规则编辑界面，可基于 IP、域名、地区等条件创建分流规则。例如可设置国内直连、国外代理、特定网站走特定节点，操作直观。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash 节点延迟检测如何帮助分流？</h5></div>
+    <div class="panel-body">
+        Clash 会定期测试节点延迟，并结合策略组自动选择最优节点处理流量。避免访问高延迟或失效节点，提高网页浏览、视频播放和游戏速度及稳定性，优化整体网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Nekobox 可以与其他代理客户端共存吗？</h5></div>
+    <div class="panel-body">
+        可以。Nekobox 与 Shadowsocks、Clash 等客户端互不干扰，可以同时运行。用户可通过策略组或分流规则选择使用节点，实现灵活的网络管理。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Surfboard 如何结合规则屏蔽广告？</h5></div>
+    <div class="panel-body">
+        Surfboard 可通过规则文件匹配广告域名或 URL，并将其重定向或阻断。结合策略组自动更新规则，可实现广告屏蔽，提高浏览体验和节省带宽。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>如何将 Clash 节点导入到 Sing-box？</h5></div>
+    <div class="panel-body">
+        Sing-box 支持从 Clash 配置文件中导入节点。用户只需将 YAML 文件放入配置目录或通过命令导入即可。系统会自动解析规则组和节点信息，简化迁移过程。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -410,16 +410,16 @@ V2Ray是一种先进的翻墙协议，具有更强的灵活性与隐蔽性。相
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-9-26-clash-stash-node.htm" title="Clash Ipad机场 - 9月26日19.8M/S|免费SSR节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点/Trojan节点节点推荐，Clash梯子购买推荐">Clash Ipad机场 - 9月26日19.8M/S|免费SSR节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点/Trojan节点节点推荐，Clash梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-stash-2026-9-7.htm" title="Clash Ipad机场 - 9月7日21.1M/S|免费SSR节点/Clash节点/V2ray节点/Trojan节点/Shadowrocket节点/Singbox节点节点推荐，Clash梯子购买推荐">Clash Ipad机场 - 9月7日21.1M/S|免费SSR节点/Clash节点/V2ray节点/Trojan节点/Shadowrocket节点/Singbox节点节点推荐，Clash梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-4-clash-verge-rev-github.htm" title="Clash Ipad机场 - 10月4日22.1M/S|免费Singbox节点/Clash节点/V2ray节点/SSR节点/Trojan节点/Shadowrocket节点节点推荐，Clash梯子购买推荐">Clash Ipad机场 - 10月4日22.1M/S|免费Singbox节点/Clash节点/V2ray节点/SSR节点/Trojan节点/Shadowrocket节点节点推荐，Clash梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-node-github-2026-10-5.htm" title="Clash Ipad机场 - 10月5日18.1M/S|免费SSR节点/V2ray节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点节点推荐，Clash梯子购买推荐">Clash Ipad机场 - 10月5日18.1M/S|免费SSR节点/V2ray节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点节点推荐，Clash梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-stash-2026-10-3.htm" title="Clash Ipad机场 - 10月3日22.8M/S|免费Clash节点/Singbox节点/V2ray节点/Trojan节点/SSR节点/Shadowrocket节点节点推荐，Clash梯子购买推荐">Clash Ipad机场 - 10月3日22.8M/S|免费Clash节点/Singbox节点/V2ray节点/Trojan节点/SSR节点/Shadowrocket节点节点推荐，Clash梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-18-clash-stash-node.htm" title="Clash Ipad机场 - 9月18日18.4M/S|免费SSR节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/Singbox节点节点推荐，Clash梯子购买推荐">Clash Ipad机场 - 9月18日18.4M/S|免费SSR节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/Singbox节点节点推荐，Clash梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-2-clash-node-daily-updates.htm" title="Clash Ipad机场 - 9月2日22.6M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点/Clash节点/SSR节点节点推荐，Clash梯子购买推荐">Clash Ipad机场 - 9月2日22.6M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点/Clash节点/SSR节点节点推荐，Clash梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-28-clash-verge-rev-github.htm" title="Clash Ipad机场 - 9月28日22.6M/S|免费Shadowrocket节点/V2ray节点/Clash节点/SSR节点/Trojan节点/Singbox节点节点推荐，Clash梯子购买推荐">Clash Ipad机场 - 9月28日22.6M/S|免费Shadowrocket节点/V2ray节点/Clash节点/SSR节点/Trojan节点/Singbox节点节点推荐，Clash梯子购买推荐</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/node-share-2026-9-11.htm" title="Clash Ipad机场 - 9月11日19.8M/S|免费Clash节点/Singbox节点/SSR节点/Trojan节点/V2ray节点/Shadowrocket节点节点推荐，Clash梯子购买推荐">Clash Ipad机场 - 9月11日19.8M/S|免费Clash节点/Singbox节点/SSR节点/Trojan节点/V2ray节点/Shadowrocket节点节点推荐，Clash梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-26-clash-stash-node.htm" title="Clash Ipad机场 - 9月26日19.8M/S|免费SSR节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点/Trojan节点节点推荐，Clash梯子购买推荐">Clash Ipad机场 - 9月26日19.8M/S|免费SSR节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点/Trojan节点节点推荐，Clash梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-stash-2026-10-13.htm" title="Clash Ipad机场 - 10月13日21.4M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Clash节点/SSR节点/Singbox节点节点推荐，Clash梯子购买推荐">Clash Ipad机场 - 10月13日21.4M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Clash节点/SSR节点/Singbox节点节点推荐，Clash梯子购买推荐</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/clash-stash-2026-9-25.htm" title="Clash Ipad机场 - 9月25日21.1M/S|免费Trojan节点/Shadowrocket节点/Clash节点/SSR节点/Singbox节点/V2ray节点节点推荐，Clash梯子购买推荐">Clash Ipad机场 - 9月25日21.1M/S|免费Trojan节点/Shadowrocket节点/Clash节点/SSR节点/Singbox节点/V2ray节点节点推荐，Clash梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-2-clash-stash-node.htm" title="Clash Ipad机场 - 10月2日22.4M/S|免费Singbox节点/SSR节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点节点推荐，Clash梯子购买推荐">Clash Ipad机场 - 10月2日22.4M/S|免费Singbox节点/SSR节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点节点推荐，Clash梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-2026-9-23.htm" title="Clash Ipad机场 - 9月23日20.7M/S|免费V2ray节点/Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点节点推荐，Clash梯子购买推荐">Clash Ipad机场 - 9月23日20.7M/S|免费V2ray节点/Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点节点推荐，Clash梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-stash-2026-10-1.htm" title="Clash Ipad机场 - 10月1日21.2M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/V2ray节点/Clash节点/SSR节点节点推荐，Clash梯子购买推荐">Clash Ipad机场 - 10月1日21.2M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/V2ray节点/Clash节点/SSR节点节点推荐，Clash梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-meta-github-2026-9-9.htm" title="Clash Ipad机场 - 9月9日22.3M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Clash节点/V2ray节点/Trojan节点节点推荐，Clash梯子购买推荐">Clash Ipad机场 - 9月9日22.3M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Clash节点/V2ray节点/Trojan节点节点推荐，Clash梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-20-clash-stash-node.htm" title="Clash Ipad机场 - 9月20日21.1M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/Clash节点/SSR节点/Trojan节点节点推荐，Clash梯子购买推荐">Clash Ipad机场 - 9月20日21.1M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/Clash节点/SSR节点/Trojan节点节点推荐，Clash梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-2026-9-13.htm" title="Clash Ipad机场 - 9月13日20M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/SSR节点/Clash节点/V2ray节点节点推荐，Clash梯子购买推荐">Clash Ipad机场 - 9月13日20M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/SSR节点/Clash节点/V2ray节点节点推荐，Clash梯子购买推荐</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -431,7 +431,7 @@ V2Ray是一种先进的翻墙协议，具有更强的灵活性与隐蔽性。相
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">6</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
+                <h4><span class="badge" style="float: right;">13</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
